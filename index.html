@@ -1,0 +1,25 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta name="viewport" content="width=default-width; user-scalable=no" />
+		<meta http-equip="Content-type" content="text/htmtl" charset="utf-8"/>
+		<title>Hello Phonegap</title>
+		
+		<script type="text/javascript" charset="utf-8" src="http://192.168.43.18/es/es/phonegap-1.4.1.js"></script>
+		<script type="text/javascript">
+			function onBodyLoad()
+			{
+				document.addEventListener("deviceready", onDeviceReady, false);
+			}
+			
+			function onDeviceReady()
+			{
+				var div = document.getElementById('myDiv');
+				div.innerHMTL = "device ready";
+			}
+		</script>
+	</head>
+	<body onload="onBodyLoad()">
+		<div id="myDiv"></div>	
+	</body>
+</html>
